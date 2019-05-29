@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+		
+class complex{
+	
+	public:
+		int a,b;
+	void setdata(int x,int y)
+	{
+	a=x;b=y;
+	}
+	void printdata()
+	{cout<<a<<" "<<b<<" ";
+	}
+};
+class r:public complex{
+
+	public:
+		
+	void sum(){
+		int t;cout<<"#"<<a<<" "<<b<<"#";
+		t=a+b;
+	cout<<"\nsum is :"<<t;}
+};
+int main()
+{int x,y;
+complex c;
+cout<<"enter a and b ";
+cin>>x>>y;
+c.setdata(x,y);
+c.printdata();
+r q;
+q.a=100;
+q.b=300;
+
+q.sum();
+}
